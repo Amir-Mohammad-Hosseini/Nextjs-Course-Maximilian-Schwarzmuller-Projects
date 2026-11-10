@@ -21,12 +21,20 @@
   font-size: 1.25rem;
 }
 
-.nav a {
-  text-decoration: none;
+.nav ul li a {
   color: #ddd6cb;
+  text-decoration: none;
   font-weight: bold;
-  border-radius: 0.5rem;
-  padding: 0.5rem 1rem;
+}
+
+.nav ul li a:hover {
+  color: #ecbb6d;
+  text-shadow: 0 0 8px rgba(236, 187, 109, 0.5);
+}
+
+.nav ul li a.active {
+  color: #ecbb6d;
+  text-shadow: 0 0 8px rgba(236, 187, 109, 0.5);
 }
 
 .logo {
@@ -37,7 +45,7 @@
   text-decoration: none;
   color: #ddd6cb;
   font-weight: bold;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   letter-spacing: 0.15rem;
   text-transform: uppercase;
   font-size: 1.5rem;
