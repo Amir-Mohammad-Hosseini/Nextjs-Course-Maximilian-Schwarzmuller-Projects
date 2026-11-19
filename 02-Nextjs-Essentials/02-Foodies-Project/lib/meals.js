@@ -4,6 +4,8 @@ const db = sql("meals.db")
 
 const getMeals =async () => {
     await new Promise((resolve) => setTimeout(resolve , 5000))
+
+    // throw new Error("Loading meals failed")
     return db.prepare("SELECT * FROM meals").all()
 }
 
